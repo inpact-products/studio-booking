@@ -2,13 +2,14 @@ import type { ClassInfo } from "./ClassInfo";
 
 interface ClassDetailsProps {
   info: ClassInfo;
+  spotsLeft: number;
 }
 
-export function ClassDetails({ info }: ClassDetailsProps) {
+export function ClassDetails({ info, spotsLeft }: ClassDetailsProps) {
   return (
     <div>
       <p>{info.time} · with {info.instructor}</p>
-      <p>{info.spotsLeft} spots left · ${info.price}</p>
+      <p>{spotsLeft} spots left · ${info.price}</p>
     </div>
   );
 }

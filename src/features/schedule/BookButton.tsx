@@ -1,11 +1,12 @@
 interface BookButtonProps {
-  name: string;
+  booked: boolean;
+  onToggle: () => void;
 }
 
-export function BookButton({ name }: BookButtonProps) {
+export function BookButton({ booked, onToggle }: BookButtonProps) {
   return (
-    <button type="button" onClick={() => console.log("Booked " + name)}>
-      Book
+    <button type="button" onClick={onToggle}>
+      {booked ? "Booked ✓ · Cancel" : "Book"}
     </button>
   );
 }
