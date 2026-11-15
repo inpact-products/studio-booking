@@ -11,3 +11,26 @@ body {
   padding: 4px 12px;
   border-radius: 999px;
 }
+
+.class-card {
+  border: 1px solid #E4E1DA;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+  max-width: 340px;
+}
+
+label {
+  display: block;
+}
+
+.signup {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
+.signup input {
+  width: 100%;
+  box-sizing: border-box;
+}

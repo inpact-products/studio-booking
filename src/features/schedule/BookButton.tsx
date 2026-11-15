@@ -1,7 +1,12 @@
-export function BookButton() {
+interface BookButtonProps {
+  booked: boolean;
+  onToggle: () => void;
+}
+
+export function BookButton({ booked, onToggle }: BookButtonProps) {
   return (
-    <button type="button" onClick={() => console.log("Booked Power Hour")}>
-      Book
+    <button type="button" onClick={onToggle}>
+      {booked ? "Booked ✓ · Cancel" : "Book"}
     </button>
   );
 }

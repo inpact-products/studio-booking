@@ -1,13 +1,15 @@
-const time: string = "Tuesday 6:00 PM";
-const instructor: string = "Emma Smith";
-const spotsLeft: number = 4;
-const price: number = 18;
+import type { ClassInfo } from "./ClassInfo";
 
-export function ClassDetails() {
+interface ClassDetailsProps {
+  info: ClassInfo;
+  spotsLeft: number;
+}
+
+export function ClassDetails({ info, spotsLeft }: ClassDetailsProps) {
   return (
     <div>
-      <p>{time} · with {instructor}</p>
-      <p>{spotsLeft} spots left · ${price}</p>
+      <p>{info.time} · with {info.instructor}</p>
+      <p>{spotsLeft} spots left · ${info.price}</p>
     </div>
   );
 }
