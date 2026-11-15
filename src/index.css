@@ -1,0 +1,13 @@
+/* Styles for the whole app. Add your CSS rules here. */
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.badge {
+  display: inline-block;
+  background: #E3F1EE;
+  color: #0F6E64;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
